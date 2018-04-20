@@ -77,3 +77,13 @@ RUN go get github.com/kniren/gota/dataframe && \
     go get gonum.org/v1/gonum/... && \
     go get github.com/mash/gokmeans && \
     go get github.com/gorgonia/gorgonia
+
+# Install Tensorflow
+ARG TF_TYPE="cpu"
+ARG TARGET_DIRECTORY='/usr/local'
+
+RUN curl -L \
+    "https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-${TF_TYPE}-$(go env GOOS)-x86_64-1.7.0.tar.gz" | \
+    tar -C $TARGET_DIRECTORY -xz && \
+    ldconfig && \
+    go get github.com/tensorflow/tensorflow/tensorflow/go
