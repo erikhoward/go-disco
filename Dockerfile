@@ -131,4 +131,5 @@ RUN go get -u github.com/nfnt/resize gonum.org/v1/gonum/... gonum.org/v1/plot/..
 
 # Install lgo
 RUN lgo install && lgo installpkg github.com/nfnt/resize gonum.org/v1/gonum/... gonum.org/v1/plot/... github.com/wcharczuk/go-chart
+RUN lgo installpkg github.com/tensorflow/tensorflow/tensorflow/go github.com/tensorflow/tensorflow/tensorflow/go/op
 RUN python3 $GOPATH/src/github.com/yunabe/lgo/bin/install_kernel
