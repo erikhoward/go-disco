@@ -25,7 +25,7 @@ docker run --rm -it \
     -p 8888:8888 \
     erikhoward/go-disco \
     jupyter notebook --ip=0.0.0.0 \
-    --notebook-dir=${HOME}/notebooks
+    --notebook-dir=/home/disco/notebooks
 ```
 
 ## Contributing
