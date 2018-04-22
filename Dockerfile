@@ -4,7 +4,7 @@
 #
 # USAGE:
 #	Interactive terminal
-#	docker run --rm -it --name godisco -v $HOME/go/src:/go/src 
+#	docker run --rm -it --name godisco -v $PWD:/go/src erikhoward/go-disco /bin/bash
 #
 #	Go Jupyter notebook
 #	docker run --rm -it -p 8888:8888 erikhoward/go-disco jupyter notebook --ip=0.0.0.0 --allow-root
@@ -115,11 +115,13 @@ ARG NB_USER=disco
 ARG NB_UID=1000
 ENV HOME /home/${NB_USER}
 RUN adduser --disabled-password \
-    --gecos "Default user" \
+    --gecos "Disco user" \
     --uid ${NB_UID} \
     --home ${HOME} \
     ${NB_USER}
-RUN chown -R ${NB_USER}:${NB_USER} ${HOME} $GOPATH $LGOPATH
+
+RUN mkdir -p ${HOME}/go/src ${HOME}/notebooks && \
+    chown -R ${NB_USER}:${NB_USER} ${HOME} $GOPATH $LGOPATH ${HOME}/notebooks
 USER ${NB_USER}
 WORKDIR ${HOME}
 

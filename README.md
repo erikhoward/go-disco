@@ -7,7 +7,26 @@
 
 `go:disco` is a Docker container for doing machine learning research and development using Go.
 
-## Getting Started
+## Quick Start
+
+To start an interactive **go:disco** Docker container:
+
+```sh
+docker run --rm -it \
+    --name disco \
+    erikhoward/go-disco \
+    /bin/bash    
+```
+
+To run a Jupyter notebook with a Go kernal:
+```sh
+docker run --rm -it \
+    --name disco \
+    -p 8888:8888 \
+    erikhoward/go-disco \
+    jupyter notebook --ip=0.0.0.0 \
+    --notebook-dir=${HOME}/notebooks --allow-root
+```
 
 ## Contributing
 
@@ -20,6 +39,7 @@ Found a bug or have a feature request? [Please open a new issue](https://github.
 ## TODO
 
 - [ ] Add support for opencv
+- [ ] Add CUDA support
 
 ## Acknowledgements
 
