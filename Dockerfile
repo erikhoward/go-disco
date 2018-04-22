@@ -4,10 +4,10 @@
 #
 # USAGE:
 #	Interactive terminal
-#	docker run --rm -it --name godisco -v $PWD:/go/src erikhoward/go-disco /bin/bash
+#	docker run --rm -it --name godisco erikhoward/go-disco /bin/bash
 #
 #	Go Jupyter notebook
-#	docker run --rm -it -p 8888:8888 erikhoward/go-disco jupyter notebook --ip=0.0.0.0 --allow-root
+#	docker run --rm -it -p 8888:8888 erikhoward/go-disco jupyter notebook --ip=0.0.0.0
 
 # Base docker image
 FROM debian:jessie-slim
