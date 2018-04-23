@@ -82,7 +82,18 @@ RUN go get github.com/kniren/gota/dataframe && \
     go get github.com/ryanbressler/CloudForest && \
     go get gonum.org/v1/gonum/... && \
     go get github.com/mash/gokmeans && \
-    go get github.com/gorgonia/gorgonia
+    go get github.com/Fontinalis/fonet && \
+    go get github.com/antchfx/antch && \
+    go get github.com/mholt/archiver/cmd/archiver && \
+    go get github.com/pkg/errors && \
+    go get github.com/james-bowman/nlp && \
+    go get gopkg.in/neurosnap/sentences.v1 && \
+    go get github.com/corona10/goimagehash && \
+    go get github.com/go-sql-driver/mysql && \
+    go get github.com/jackc/pgx && \
+    go get github.com/mongodb/mongo-go-driver/mongo && \
+    go install github.com/mattn/go-sqlite3 && \
+    curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 # Install Tensorflow
 ARG TF_TYPE="cpu"
