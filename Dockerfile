@@ -90,6 +90,7 @@ RUN go get github.com/kniren/gota/dataframe && \
     go get gopkg.in/neurosnap/sentences.v1 && \
     go get github.com/corona10/goimagehash && \
     go get github.com/go-sql-driver/mysql && \
+    go get github.com/gocql/gocql && \
     go get github.com/jackc/pgx && \
     go get github.com/mongodb/mongo-go-driver/mongo && \
     go install github.com/mattn/go-sqlite3 && \

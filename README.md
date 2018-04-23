@@ -57,6 +57,7 @@ docker run --rm -it \
 * Error Handling - [pkg/errors]
 * Dependency Management - [golang/dep]
 * Datastore Support
+  * Cassandra - [gocql/gocql]
   * MongoDB - [mongodb/mongo-go-driver]
   * MySQL, MariaDB, Google Cloud SQL - [go-sql-driver/mysql]
   * Postgres - [jackc/pgx]
@@ -75,6 +76,7 @@ Found a bug? Have a feature request? Found something missing in the documentatio
 
 - [ ] Add support for opencv
 - [ ] Add CUDA support
+- [ ] More examples
 
 ## Acknowledgements
 
