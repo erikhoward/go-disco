@@ -66,7 +66,9 @@ docker run --rm -it \
 
 ## Contributing
 
-Please see our guide on [contributing to go:disco](CONTRIBUTING.md)
+For a complete guide on contributing to **go:disco** see [contributing to go:disco](CONTRIBUTING.md).
+
+We welcome contributions of any kind to **go:disco** including documentation, examples, bug fixes, tutorials, blog posts, feature requests, feature implementations, help answering questions, etc.
 
 ## Bugs and Feature Requests
 
@@ -74,6 +76,7 @@ Found a bug? Have a feature request? Found something missing in the documentatio
 
 ## TODO
 
+- [ ] Add machine learning libs to Jupyter Go kernal
 - [ ] Add support for opencv
 - [ ] Add CUDA support
 - [ ] More examples
