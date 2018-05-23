@@ -94,6 +94,7 @@ RUN go get github.com/kniren/gota/dataframe && \
     go get github.com/jackc/pgx && \
     go get github.com/mongodb/mongo-go-driver/mongo && \
     go get github.com/mattn/go-sqlite3 && go install github.com/mattn/go-sqlite3 && \
+    go get github.com/ynqa/word-embedding && \
     curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 # Install Tensorflow
